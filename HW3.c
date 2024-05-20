@@ -5,19 +5,19 @@
 #define ROWS 9
 #define COLS 9
 
-//void clearScreen() {
+void clearScreen() {
     system("cls");
     printf("按任意鍵繼續...\n");
     getch(); /*等待使用者按下任意鍵*/
 }
 void displayMenu() { /*主選單*/ 
-    printf("- - - - - - - - - - - - - -\n");
+    printf("____________________________\n");
     printf("|     [Booking System]    |\n");
     printf("|    a.Available seats    |\n");
     printf("|    b.Arrange for you    |\n");
     printf("|    c.Choose by yourself |\n");   
     printf("|    d.Exit               |\n");
-    printf("- - - - - - - - - - - - - -\n");
+    printf("____________________________\n");
 }
 void initializeSeats(char seats[ROWS][COLS]) { /*初始化座位表格，隨機選擇十個座位並標記為已預訂*/
     srand(time(0));
