@@ -40,7 +40,7 @@ void welcome_screen() {
     while (attempts < 3) {
         clear_screen();
         printf("------------------------------------\n");
-        printf(" 成功進入學生成績管理系統 \n");
+        printf(" 學生成績管理系統 \n");
         printf("++++++++++++++++++++++++++++++++++++\n");
         printf("請輸入4位數字密碼: ");
         scanf("%4s", input); // 讀取用戶輸入
